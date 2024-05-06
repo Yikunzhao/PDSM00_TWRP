@@ -1,12 +1,8 @@
-name: debugger-action
-on:
-  push:
-    branches:
-      - test
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Setup Debug Session
-        uses: csexton/debugger-action@master
+- name: ls -a via ssh
+  uses: garygrossgarten/github-action-ssh@release
+  with:
+    command: ls -a
+    host: ${{ secrets.HOST }}
+    username: garygrossgarten
+    passphrase: ${{ secrets.PASSPHRASE }}
+    privateKey: ${{ secrets.PRIVATE_KEY}}
