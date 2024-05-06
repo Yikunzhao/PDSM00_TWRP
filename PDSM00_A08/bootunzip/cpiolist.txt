@@ -1,0 +1,17 @@
+compress_level:6
+dir avb 0755
+file avb/q-gsi.avbpubkey initrd/avb\q-gsi.avbpubkey 0644
+file avb/r-gsi.avbpubkey initrd/avb\r-gsi.avbpubkey 0644
+file avb/s-gsi.avbpubkey initrd/avb\s-gsi.avbpubkey 0644
+dir debug_ramdisk 0755
+dir dev 0755
+file fstab.emmc initrd/fstab.emmc 0640
+file fstab.mt6885 initrd/fstab.mt6885 0640
+file init initrd/init 0750
+dir mnt 0755
+file oplus.fstab initrd/oplus.fstab 0644
+dir proc 0755
+dir sys 0755
+dir system 0755
+dir system/etc 0755
+file system/etc/recovery.fstab initrd/system\etc\recovery.fstab 0644
